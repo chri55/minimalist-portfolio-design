@@ -1,0 +1,53 @@
+@import '../../global-styles/global.scss';
+
+.footer {
+  @include d-flex(row, nowrap, flex-start, center);
+  width: 100%;
+  padding: 1rem 10%;
+  background-color: $darkest-blue;
+
+  svg {
+    margin-right: 3rem;
+    path {
+      fill: $v-lite-grey;
+    }
+  }
+
+  &__links {
+    @include d-flex(row, nowrap, flex-start, center);
+    a {
+      color: $v-lite-grey;
+      text-transform: uppercase;
+      font-size: 12px;
+      text-decoration: none;
+      transition: 0.2s;
+      margin-right: 2.5rem;
+
+      &::after {
+        content:"";
+        height: 1px;
+        width: 100%;
+        margin: 0 auto;
+        background-color: $lite-grey;
+        transform: scaleX(0);
+        transition: 0.2s;
+      }
+
+      &:hover {
+        color: $lite-grey;
+        &::after {
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+
+  &__media-links {
+    @include d-flex(row, nowrap, flex-end, center);
+    margin-left: auto;
+    svg {
+      @include m-reset();
+      margin-left: 16px;
+    }
+  }
+}

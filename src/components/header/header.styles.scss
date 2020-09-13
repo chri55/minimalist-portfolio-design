@@ -1,0 +1,44 @@
+@import '../../global-styles/global.scss';
+
+.header {
+  @include d-flex(row, nowrap, space-between, baseline);
+  width: 100%;
+  padding: 4rem 10%;
+}
+
+.header-links {
+  @include d-flex(row, nowrap, flex-end, baseline);
+  height: 100%;
+  a {
+    @include d-flex(column, nowrap);
+    margin-left: 2.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+
+    &.active {
+      color: $desat-cyan;
+    }
+
+    &::after {
+      content: "";
+      height: 2px;
+      width: 100%;
+      background-color: $desat-cyan;
+      transition: 0.2s;
+      transform: scaleX(0);
+      margin: -3px auto 0 auto;
+    }
+
+    &:hover {
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+
+  &__menu {
+    display:none;
+  }
+}

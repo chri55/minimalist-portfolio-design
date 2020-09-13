@@ -1,0 +1,101 @@
+{
+  "pages": [
+    {
+      "route":"/manage",
+      "title": "Manage",
+      "summary": "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.",
+      "skills": [
+        "Interaction Design",
+        "Front End Development"
+      ],
+      "tools": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "link": "#",
+      "background": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
+      "images": [
+        "images-portfolio-manage-1.jpg",
+        "images-portfolio-manage-2.jpg"
+      ],
+      "next": "/bookmark",
+      "nextName":"Bookmark",
+      "previous": "/fylo",
+      "previousName": "Fylo"
+    },
+    {
+      "route":"/bookmark",
+      "title": "Bookmark",
+      "summary": "This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the features section.",
+      "skills": [
+        "Interaction Design",
+        "Front End Development"
+      ],
+      "tools": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "link": "#",
+      "background": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
+      "images": [
+        "images-portfolio-bookmark-1.jpg",
+        "images-portfolio-bookmark-2.jpg"
+      ],
+      "next": "/insure",
+      "nextName":"Insure",
+      "previous": "/manage",
+      "previousName": "Manage"
+
+    },
+    {
+      "route":"/insure",
+      "title": "Insure",
+      "summary": "This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive landing page. The only JavaScript this project required was to enable the toggling of the mobile navigation.",
+      "skills": [
+        "Interaction Design",
+        "Front End Development"
+      ],
+      "tools": [
+        "HTML",
+        "CSS",
+        "JS"
+      ],
+      "link": "#",
+      "background": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
+      "images": [
+        "images-portfolio-insure-1.jpg",
+        "images-portfolio-insure-2.jpg"
+      ],
+      "next": "/fylo",
+      "previous": "/bookmark",
+      "nextName":"Fylo",
+      "previousName": "Bookmark"
+
+    },
+    {
+      "route": "/fylo",
+      "title": "Fylo",
+      "summary": "This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and built it so that it was fully-responsive. I took a mobile-first approach and used modern CSS like Flexbox and Grid for layout purposes.",
+      "skills": [
+        "Interaction Design",
+        "Front End Development"
+      ],
+      "tools": [
+        "HTML",
+        "CSS"
+      ],
+      "link": "#",
+      "background": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
+      "images": [
+        "images-portfolio-fylo-1.jpg",
+        "images-portfolio-fylo-2.jpg"
+      ],
+      "next": "/manage",
+      "previous": "/insure",
+      "nextName":"Manage",
+      "previousName": "Insure"
+    }
+  ]
+}

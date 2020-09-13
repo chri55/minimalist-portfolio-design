@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans&display=swap');
+
+$desat-cyan: #5FB4A2;
+$dark-blue: #203A4C;
+$darkest-blue: #33323D;
+
+$v-lite-grey: #FAFAFA;
+$lite-grey: #EAEAEB;
+$bright-red: #F43030;
+
+@mixin d-flex($orient:row, $wrap:wrap, $justify:flex-start, $align:flex-start) {
+  display: flex;
+  flex-flow: $orient $wrap;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin m-reset {
+  margin: 0;
+}
+
+@mixin p-reset {
+  padding: 0;
+}
+
+@mixin box-reset {
+  @include m-reset();
+  @include p-reset();
+}
+
+@mixin h1 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 3.125rem; //Typically 50px;
+  letter-spacing: -0.45px;
+  line-height: 1;
+}
+
+@mixin h2 {
+  font-family: "Ibarra Real Nova", serif; 
+  font-size: 2.5rem;
+  letter-spacing: -0.36px;
+  line-height: 1.05;
+}
+
+@mixin h3 {
+  font-family: "Ibarra Real Nova", serif; 
+  font-size: 2rem;
+  letter-spacing: -0.29px;
+  line-height: 1.25;
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: "Public Sans", sans-serif;
+  color: $darkest-blue;
+  line-height: 2;
+}

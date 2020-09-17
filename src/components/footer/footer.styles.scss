@@ -22,6 +22,7 @@
       text-decoration: none;
       transition: 0.2s;
       margin-right: 2.5rem;
+      font-weight: 700;
 
       &::after {
         content:"";
@@ -48,6 +49,7 @@
     svg {
       @include m-reset();
       margin-left: 16px;
+      cursor: pointer;
     }
   }
 }

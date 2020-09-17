@@ -14,11 +14,13 @@
         "JS"
       ],
       "link": "#",
+      "linkText":"View Project",
       "background": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
       "images": [
-        "images-portfolio-manage-1.jpg",
-        "images-portfolio-manage-2.jpg"
+        "image-portfolio-manage-1.jpg",
+        "image-portfolio-manage-2.jpg"
       ],
+      "sourceFolder":"detail",
       "next": "/bookmark",
       "nextName":"Bookmark",
       "previous": "/fylo",
@@ -38,11 +40,13 @@
         "JS"
       ],
       "link": "#",
+      "linkText":"View Project",
       "background": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
       "images": [
-        "images-portfolio-bookmark-1.jpg",
-        "images-portfolio-bookmark-2.jpg"
+        "image-portfolio-bookmark-1.jpg",
+        "image-portfolio-bookmark-2.jpg"
       ],
+      "sourceFolder":"detail",
       "next": "/insure",
       "nextName":"Insure",
       "previous": "/manage",
@@ -63,11 +67,14 @@
         "JS"
       ],
       "link": "#",
+      "linkText":"View Project",
+
       "background": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
       "images": [
-        "images-portfolio-insure-1.jpg",
-        "images-portfolio-insure-2.jpg"
+        "image-portfolio-insure-1.jpg",
+        "image-portfolio-insure-2.jpg"
       ],
+      "sourceFolder":"detail",
       "next": "/fylo",
       "previous": "/bookmark",
       "nextName":"Fylo",
@@ -87,11 +94,13 @@
         "CSS"
       ],
       "link": "#",
+      "linkText":"View Project",
       "background": "This project was a front-end  challenge from Frontend Mentor. It’s a platform that enables you to practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my style.",
       "images": [
-        "images-portfolio-fylo-1.jpg",
-        "images-portfolio-fylo-2.jpg"
+        "image-portfolio-fylo-1.jpg",
+        "image-portfolio-fylo-2.jpg"
       ],
+      "sourceFolder":"detail",
       "next": "/manage",
       "previous": "/insure",
       "nextName":"Manage",

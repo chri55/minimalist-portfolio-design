@@ -50,10 +50,29 @@ $bright-red: #F43030;
   line-height: 1.25;
 }
 
+@mixin desktop-small-bp {
+  @media screen and (max-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin tablet-bp {
+  @media screen and (max-width: 900px) {
+    @content;
+  }
+}
+
+@mixin mobile-bp {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+
 * {
   box-sizing: border-box;
   font-size: 1rem;
   font-family: "Public Sans", sans-serif;
   color: $darkest-blue;
-  line-height: 2;
+  line-height: 30px;
 }
+

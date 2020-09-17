@@ -1,0 +1,110 @@
+@import '../../global-styles/global.scss';
+
+.image-feature {
+  @include d-flex(row, nowrap, space-between, stretch);
+  margin: 50px 0;
+  padding: 0 10%;
+  height: auto;
+
+  &.reverse {
+    @include d-flex(row-reverse, nowrap, space-between, stretch)
+  }
+  
+
+
+  img {
+    height: auto;
+    width: 50%;
+    object-fit: contain;
+    object-position: right;
+  }
+
+  &__info-column {
+    @include d-flex(column, nowrap, space-between, flex-start);
+    //height: 100%;
+    width: 40%;
+
+    hr {
+      //@include box-reset();
+      width: 100%;
+      opacity: 0.33;
+    }
+
+    & > {
+      //@include box-reset();
+    }
+
+    &__title {
+      @include h2;
+    }
+
+    &__link {
+      padding: 17px 32px;
+      height: auto;
+      width: auto;
+      border: 2px solid $darkest-blue;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 12px;
+      text-transform: uppercase;
+      transition: 0.2s;
+
+      &:hover {
+        background-color: $darkest-blue;
+        color: $v-lite-grey;
+      }
+    }
+  }
+
+}
+
+@include desktop-small-bp {
+  .image-feature {
+    height: auto;
+    padding: 0 5%;
+  }
+}
+
+@include tablet-bp {
+  .image-feature {
+    height: auto;
+    img {
+      width: 60%;
+      height: 100%;
+    }
+
+    &__info-column {
+      width: 30%;
+    }
+  }
+}
+
+@include mobile-bp {
+  .image-feature {
+    @include d-flex(column, nowrap, space-between, center);
+    padding: 0 10%;
+
+    &.reverse {
+      @include d-flex(column, nowrap, space-between, center);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 30px;
+    }
+
+    &__info-column {
+      width: 100%;
+      min-height: 500px;
+      height: auto;
+
+      &__title,
+      &__summary,
+      &__link {
+        margin: 20px 0;
+      }
+    }
+
+  }
+}

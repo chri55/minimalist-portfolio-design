@@ -8,6 +8,8 @@ import {
 
 import Header from './components/header/header.component';
 import Footer from './components/footer/footer.component';
+import Home from './pages/home/home';
+import Portfolio from './pages/portfolio/portfolio';
 
 import './App.css';
 
@@ -19,13 +21,13 @@ function App() {
         <Header></Header>
         <Switch>
           <Route path="/portfolio">
-            <div>Portfolio</div>
+            <Portfolio></Portfolio>
           </Route>
           <Route path="/contact">
             <div>Contact</div>
           </Route>
           <Route path="/">
-            <div>Home</div>
+            <Home></Home>
           </Route>
         </Switch>
         <Footer></Footer>

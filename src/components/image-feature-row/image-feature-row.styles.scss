@@ -9,7 +9,6 @@
   &.reverse {
     @include d-flex(row-reverse, nowrap, space-between, stretch)
   }
-  
 
 
   img {
@@ -17,6 +16,18 @@
     width: 50%;
     object-fit: contain;
     object-position: right;
+  }
+  
+  &__image {
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 400px;
+
+    &.special {
+      height: 500px;
+      background-position: right;
+    }
   }
 
   &__info-column {
@@ -62,6 +73,10 @@
   .image-feature {
     height: auto;
     padding: 0 5%;
+
+    &__image {
+      height: 500px;
+    }
   }
 }
 
@@ -73,8 +88,19 @@
       height: 100%;
     }
 
+    &__image {
+      width: 60%;
+      height: 500px;
+
+      &.special {
+        height: 800px;
+        background-position: right;
+
+      }
+    }
+
     &__info-column {
-      width: 30%;
+      width: 35%;
     }
   }
 }
@@ -83,6 +109,7 @@
   .image-feature {
     @include d-flex(column, nowrap, space-between, center);
     padding: 0 10%;
+    height: auto;
 
     &.reverse {
       @include d-flex(column, nowrap, space-between, center);
@@ -92,6 +119,15 @@
       width: 100%;
       height: auto;
       margin-bottom: 30px;
+    }
+
+    &__image {
+      width: 100%;
+      height: 50vmin;
+
+      &.special {
+        height: 80vmin;
+      }
     }
 
     &__info-column {

@@ -53,3 +53,38 @@
     }
   }
 }
+
+@include desktop-small-bp {
+  .footer {
+    padding: 1rem 5%;
+  }
+}
+
+@include mobile-bp {
+  .footer {
+    @include d-flex(column, nowrap, flex-start, center);
+
+    svg {
+      @include box-reset();
+      margin-bottom: 7.5px;
+    }
+    
+    &__links {
+      @include d-flex(column, nowrap, flex-start, center);
+
+      a {
+        @include box-reset();
+        margin: 7.5px 0;
+      }
+    }
+
+    &__media-links {
+      @include box-reset();
+      @include d-flex(row, nowrap, space-between, center);
+      width: 150px;
+      margin-top: 7.5px;
+      svg {
+      }
+    }
+  }
+}

@@ -4,6 +4,7 @@
   @include d-flex(row, nowrap, space-between, baseline);
   width: 100%;
   padding: 4rem 10%;
+  height:100px;
 }
 
 .header-links {
@@ -38,8 +39,65 @@
       }
     }
   }
+}
 
-  &__menu {
-    display:none;
+.menu {
+  display:none;
+}
+
+@include desktop-small-bp {
+  padding: 4rem 5%;
+}
+
+@include mobile-bp {
+  .header {
+    .header-links {
+      width: 0;
+      height: 0;
+      z-index: -1;
+      opacity: 0;
+      position: absolute; 
+      right: 0;
+      top: 100px;
+      transition: 0.3s;
+
+      &__link {
+        opacity: 0;
+        color: white;
+        transition: 0s;
+      }
+
+      &.menu-open {
+        @include d-flex(column, nowrap, space-evenly, center);
+        width: 75%;
+        height: 200px;
+        right: 5%;
+        z-index: 1;
+        opacity: 1;
+        background-color: $darkest-blue;
+        *{
+          @include box-reset();
+          color: white;
+          opacity: 1;
+        }
+      }
+    }
+    .menu {
+      @include d-flex(column, nowrap, center, center);
+      &__button {
+        display: none;
+        cursor:pointer;
+
+        &:hover {
+          cursor: pointer;
+        }
+        
+        &.active {
+          cursor:pointer;
+          display: block;
+        }
+      }
+    }
   }
+
 }

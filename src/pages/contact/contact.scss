@@ -1,0 +1,87 @@
+@import '../../global-styles/global.scss';
+
+.contact {
+  @include d-flex(column, nowrap);
+  width: 100%;
+  padding: 0 10%;
+
+  hr {
+    width: 100%;
+    opacity: 0.33;
+  }
+
+  &__description {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    &--title {
+      @include h2;
+    }
+
+    &--body {
+      @include d-flex(column, nowrap);
+      margin: 32px 0;
+
+      form {
+        @include d-flex(column, nowrap);
+        width: 100%;
+        * {
+          width: 100%;
+          margin-bottom: 12px;
+        }
+        input[type="text"],
+        textarea {
+          background-color: $lite-grey;
+          border: none;
+          padding: 10px;
+          font-size: 14px;
+        }
+        .send-message {
+          padding: 17px 32px;
+          width: 200px;
+          background-color: $darkest-blue;
+          color: white;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          font-size: 12px;
+        }
+      }
+    }
+
+    &--media-links {
+      @include d-flex(row, nowrap, space-between, center);
+      width: 100px;
+    }
+  }
+}
+
+@include desktop-small-bp {
+  .contact {
+    padding: 0 5%;
+  }
+}
+
+@include tablet-bp {
+  .contact {
+    &__description {
+      @include d-flex(column, nowrap);
+
+      &--title,
+      &--body {
+        @include box-reset();
+        margin: 15px 0;
+        width: 100%;
+      }
+      &--body {
+        form {
+          width: 100%;
+          * {
+            width: 100%;
+            margin: 7.5px 0;
+          }
+        }
+      }
+    }
+  }
+}

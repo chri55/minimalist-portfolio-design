@@ -1,0 +1,131 @@
+@import '../../global-styles/global.scss';
+
+.detail-view {
+  @include d-flex(column, nowrap, flex-start, stretch);
+  width: 100%;
+  padding: 0 10%;
+
+  &__hero {
+    height: auto;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  &__info-container {
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+
+    &__project-summary {
+      margin-right: 40px;
+
+      hr {
+        opacity: 0.33;
+      }
+
+      &--title {
+        @include h2; 
+      }
+
+      &--skill-list {
+        margin-bottom: 20px;
+
+        * {
+          font-weight: 700;
+          color: $desat-cyan;
+        }
+
+      }
+    }
+
+    &__background {
+      margin-left: 40px;
+      
+      &--subtitle {
+        @include h3;
+      }
+
+      &--image {
+        margin-bottom: 32px;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__bottom-links {
+    @include d-flex(column, nowrap, flex-start, stretch);
+    width: 100%;
+    height: 250px;
+
+    hr {
+      @include box-reset();
+      width: 100%;
+      opacity: 0.33;
+    }
+
+    &__mid-container {
+      @include d-flex(row, nowrap, space-between, center);
+
+      h3 {
+        @include h3;
+      }
+
+      a {
+        margin: 0 0 32px 0;
+      }
+
+      .spacer {
+        @include box-reset();
+        height: 100%;
+        width: 1px;
+        background-color: black;
+        opacity: 0.33;
+      }
+
+      .link {
+        max-width: 200px;
+        width: 200px;
+      }
+
+      .prev {
+        @include d-flex(column, nowrap, flex-start, flex-start);
+      }
+
+      .next {
+        @include d-flex(column, nowrap, flex-start, flex-end);
+      }
+    }
+  }
+}
+
+@include desktop-small-bp {
+  .detail-view {
+    padding: 0 5%;
+  }
+}
+
+@include mobile-bp  {
+  .detail-view {
+    &__info-container {
+      @include d-flex(column, nowrap, flex-start, stretch);
+
+      &__project-summary,
+      &__background {
+        @include box-reset();
+        width: 100%;
+      } 
+    }
+    &__bottom-links__mid-container {
+      .link {
+        max-width: calc(50% - 0.5px);
+        width: calc(50% - 0.5px); 
+      }
+      h3 {
+        font-size: 1.5rem;
+      }
+      a {
+        font-size: 0.85rem;
+      }
+    }
+  }
+}

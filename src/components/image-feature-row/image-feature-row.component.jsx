@@ -29,11 +29,12 @@ class ImageFeatureRow extends Component {
 
     return (
       <div className={`image-feature ${reverse ? 'reverse' : ''}`}>
-        <img src={
+        {/*<img src={
             image
           } 
           alt={title}
-        />
+        />*/}
+        <div className={`image-feature__image ${sourceFolder === 'homepage' ? 'special' : ''}`} style={{backgroundImage: `url(${image})`}}></div>
         <div className="image-feature__info-column">
           <hr></hr>
           <h1 className="image-feature__info-column__title">{title}</h1>
